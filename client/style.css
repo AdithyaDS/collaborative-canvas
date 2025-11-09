@@ -1,0 +1,12 @@
+:root{--sidebar-width:220px}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;height:100vh;display:flex;flex-direction:column}
+header{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:#f6f6f8;border-bottom:1px solid #e6e6e8}
+main{flex:1;display:flex;position:relative}
+#canvas{flex:1;display:block}
+#sidebar{width:var(--sidebar-width);background:#fafafa;border-left:1px solid #eee;padding:12px;overflow:auto}
+#controls label{margin-right:8px}
+#users{list-style:none;padding:0;margin:0}
+#users li{padding:6px;border-radius:6px;margin-bottom:6px}
+footer{padding:6px 12px;background:#fff;border-top:1px solid #eee}
+canvas{width:100%;height:100%}

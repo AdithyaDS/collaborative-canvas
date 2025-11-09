@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Collaborative Canvas</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+<header>
+<h1>Collaborative Canvas</h1>
+<div id="controls">
+<label>Tool:
+<select id="tool">
+<option value="brush">Brush</option>
+<option value="eraser">Eraser</option>
+</select>
+</label>
+<label>Color: <input id="color" type="color" value="#000000"></label>
+<label>Width: <input id="width" type="range" min="1" max="50" value="4"></label>
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+</div>
+</header>
+
+
+<main>
+<canvas id="canvas"></canvas>
+<aside id="sidebar">
+<h3>Users Online</h3>
+<ul id="users"></ul>
+</aside>
+</main>
+
+
+<footer>
+<small>Open multiple browser windows to test multi-user drawing.</small>
+</footer>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="websocket.js"></script>
+<script src="canvas.js"></script>
+<script src="main.js"></script>
+</body>
+
+</body>
+</html>
